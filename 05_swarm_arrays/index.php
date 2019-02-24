@@ -48,6 +48,9 @@ $checkins = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Swarm</title>
 </head>
@@ -59,14 +62,17 @@ $checkins = [
 <div class="post__checkins">
 
             <?php foreach($checkins as $c): ?>
-            <div><?php echo $c["image"]; ?></div>
-            <p class="post__checkin">
-                <strong><?php echo $c["username"]; ?></strong><br>
-                <span><?php echo $c["name-location"]; ?></span><br>
-                <span><?php echo $c["place"]; ?></span>
-            </p>
-            <div><?php echo $c["time"]; ?></div>
-
+            <div class="container">
+                <div class="user--image"><?php echo $c["image"]; ?></div>
+                <div>
+                    <p class="post__checkin">
+                        <strong><?php echo $c["username"]; ?></strong><br>
+                        <span class="focus"><?php echo $c["name-location"]; ?></span><br>
+                        <span class="subtle"><?php echo $c["place"]; ?></span>
+                    </p>
+                </div>
+                <div class="checkin--time"><?php echo $c["time"]; ?></div>
+            </div>
             <?php endforeach; ?>
 
         </div>

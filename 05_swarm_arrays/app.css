@@ -1,0 +1,64 @@
+body{
+    font-family: 'Roboto', sans-serif;
+} 
+
+header{
+    background-color: #ffa633;
+    display: flex;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+header h2{
+    padding-left: 0.5em;
+    color: white;
+    font-weight: lighter;
+}
+
+header img{
+    padding-top: 0.5em;
+    padding-left: 1em;
+}
+
+.post__checkins .container{
+    display: flex;
+    height: 100px;
+    border-bottom: 1px solid #F3F3F3;
+}
+
+
+.container .user--image{
+    padding-top: 1.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.container .post__checkin{
+    width: 250px;
+}
+
+.container .checkin--time{
+    padding-top: 3em;
+    color: #D2D1CF;
+    font-size: 0.9em;
+}
+
+
+.focus{
+    color: #ffa633;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+.subtle{
+    color: #7B7B7B;
+    font-size: 0.8em;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #F8F7F5;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
