@@ -13,12 +13,14 @@ header h2{
     padding-left: 0.5em;
     color: white;
     font-weight: lighter;
+    padding-right: 3em;
 }
 
 header img{
     padding-top: 0.5em;
     padding-left: 1em;
 }
+
 
 .post__checkins .container{
     display: flex;

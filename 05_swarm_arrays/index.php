@@ -82,4 +82,6 @@ $checkins = [
 <footer>
 <?php include_once 'footer.inc.php';?>
 </footer>
+
+<script src="app.js"></script>
 </html>
