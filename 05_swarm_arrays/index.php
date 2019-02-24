@@ -43,8 +43,6 @@ $checkins = [
     ]
 ];
 
-
-
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,6 +52,9 @@ $checkins = [
     <title>Swarm</title>
 </head>
 <body>
+<header>
+    <?php include_once 'header.inc.php';?>
+</header>
 
 <div class="post__checkins">
 
@@ -71,4 +72,8 @@ $checkins = [
         </div>
     
 </body>
+
+<footer>
+<?php include_once 'footer.inc.php';?>
+</footer>
 </html>
