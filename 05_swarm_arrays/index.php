@@ -1,5 +1,7 @@
 <?php
 
+const DISTANCE = "far";
+
 $checkins = [
     [
         "image" => '<img src="https://fakeimg.pl/50x50/">',
@@ -42,6 +44,21 @@ $checkins = [
         "time" => "1h"
     ]
 ];
+
+function sortArray($a, $b){
+    if (DISTANCE == "far"){
+        return $b['distance'] - $a['distance'];
+    } else {
+        return $a['distance'] - $b['distance'];
+    }
+}
+/*
+    functie die kijkt of de array van ver naar kort of omgekeerd moet sorteren (far of iets anders)
+    returned ver-dichtbij
+
+*/
+usort($checkins,"sortArray");
+// functie aanroepen :)
 
 ?><!DOCTYPE html>
 <html lang="en">

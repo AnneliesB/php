@@ -1,0 +1,7 @@
+/*.concert__items{
+    visibility: hidden;
+}*/
+
+.show{
+    visibility: visible;
+}

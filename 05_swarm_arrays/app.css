@@ -22,6 +22,8 @@ header img{
 }
 
 
+
+
 .post__checkins .container{
     display: flex;
     height: 100px;
@@ -63,4 +65,15 @@ footer{
     background-color: #F8F7F5;
     padding-top: 1em;
     padding-bottom: 1em;
+}
+
+.btnSort{
+    text-decoration: none;
+    color:black;
+   background-color: #DADADA;
+   height: 20px;
+   padding: 0.5em;
+   border-radius: 5px;
+   margin-top: 1em;
+   margin-left: 1em;
 }
