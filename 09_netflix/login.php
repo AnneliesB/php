@@ -8,19 +8,15 @@
 		}
 	};
 
-	if(!empty($_POST)){
-		// zodra we iets verzonden hebben, gaan we de volgende code uitvoeren
+	if( !empty( $_POST ) ){
 		$email = $_POST['Email'];
 		$password = $_POST['Password'];
 
-		if (canLogin($email, $password)){
-			$salt = "billieheefteenblaasontsteking";
-			$cookieval = $email . "," . md5($email.$salt);
-			setcookie("loggedin", $cookieval, time()+60*60*24*30);
-			// als canLogin true is, of niet vals, voeren we de code uit
+		if( canLogin($email, $password) ) {
+			session_start();
+			$_SESSION['loggedin'] = true;
 			header("Location: index.php");
-			// eens we zijn ingelogd naar de index pagina redirecten
-		} else{
+		} else {
 			$error = true;
 		}
 	}

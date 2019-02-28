@@ -1,24 +1,12 @@
 <?php 
     include_once("data.inc.php");
-    $salt = "billieheefteenblaasontsteking";
-    // var_dump($_COOKIE);
-    // checl of cookie er is
+    session_start();
 
-    if (isset($_COOKIE['loggedin'])){
-        $cookie = $_COOKIE['loggedin'];
-        $arrCookie = explode(",", $cookie);
-
-        
-
-        if (md5($arrCookie[0].$salt) == $arrCookie[1]){
-
-        } else {
-          // ophoepelen
-          header('Location:login.php');
-        }
+    if( isset( $_SESSION['loggedin']) ){
+      // ☀️
     } else {
-      // ophoepelen
-      header('Location:login.php');
+      // GA MAAR WEG
+      header('Location: login.php');
     }
 
 ?><!DOCTYPE html>
