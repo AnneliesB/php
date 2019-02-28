@@ -14,6 +14,9 @@
 		$password = $_POST['Password'];
 
 		if (canLogin($email, $password)){
+			$salt = "billieheefteenblaasontsteking";
+			$cookieval = $email . "," . md5($email.$salt);
+			setcookie("loggedin", $cookieval, time()+60*60*24*30);
 			// als canLogin true is, of niet vals, voeren we de code uit
 			header("Location: index.php");
 			// eens we zijn ingelogd naar de index pagina redirecten

@@ -1,5 +1,22 @@
 <?php 
     include_once("data.inc.php");
+
+    // var_dump($_COOKIE);
+    // checl of cookie er is
+
+    if (isset($_COOKIE['loggedin'])){
+        $cookie = $_COOKIE['loggedin'];
+        if ($cookie == "yes"){
+
+        } else {
+          // ophoepelen
+          header('Location:login.php');
+        }
+    } else {
+      // ophoepelen
+      header('Location:login.php');
+    }
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
