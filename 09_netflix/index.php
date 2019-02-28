@@ -1,12 +1,16 @@
 <?php 
     include_once("data.inc.php");
-
+    $salt = "billieheefteenblaasontsteking";
     // var_dump($_COOKIE);
     // checl of cookie er is
 
     if (isset($_COOKIE['loggedin'])){
         $cookie = $_COOKIE['loggedin'];
-        if ($cookie == "yes"){
+        $arrCookie = explode(",", $cookie);
+
+        
+
+        if (md5($arrCookie[0].$salt) == $arrCookie[1]){
 
         } else {
           // ophoepelen
