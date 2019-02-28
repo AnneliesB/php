@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php 
+    include_once("data.inc.php");
+?><!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -11,8 +13,12 @@
   <?php include_once("nav.inc.php"); ?>
   
   <div class="collection">
-    <a href="#" class="collection__item" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaoJ20qUVNCzeZnQ7Aq2aBiBdpcJQMG4_u2JhNXpvL4mLXwO2H)">
-    </a>
+      <?php foreach($collection as $key => $item): ?>
+      
+        <a href="details.php?id=<?php echo $key;?>" class="collection__item" style="background-image: url(<?php echo $item['poster']; ?>)">
+        </a>
+
+      <?php endforeach; ?>
   </div>
   
 </div>

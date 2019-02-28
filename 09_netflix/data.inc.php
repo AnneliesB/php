@@ -11,7 +11,7 @@
 		],
 		[
 			"title"		=>	"Stranger Things",
-			"poster" 	=>	"https://www.comicbookmovie.com/images/articles/banners/154707.jpg"
+			"poster" 	=>	"https://images-na.ssl-images-amazon.com/images/I/91PolkTUn9L._SY679_.jpg"
 		],
 		[
 			"title"		=>	"Making a Murderer",
