@@ -1,0 +1,180 @@
+*
+{
+  box-sizing: border-box;
+}
+
+.hidden
+{
+  display: none;
+}
+
+body
+{
+  background-color: black;
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0;
+
+}
+
+.navbar
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5em;
+}
+
+.navbar a
+{
+  color: white;
+  font-size: 0.8em;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 2em;
+}
+
+a.navbar__logout
+{
+  margin-left: 2em;
+  margin-right: 0;
+}
+
+.navbar .logo
+{
+  color: red;
+  font-weight: bold;
+}
+
+.navbar form
+{
+  flex: 1 1 30%;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.navbar input
+{
+  width: 100%;
+  max-width: 200px;
+  background-color: black;
+  color: white;
+  padding: 0.5em;
+  border: 1px solid white;
+}
+
+.collection
+{
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-gap: 1em;
+}
+
+.collection__item
+{
+  background-size: cover;
+  height: 200px;
+  background-position: center center;
+  max-width: 300px;
+}
+
+.netflixLogin
+{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr [form] minmax(240px, 450px) 1fr;
+  grid-template-rows: 1fr [form] 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  background-image: url(http://www.tokkoro.com/picsup/1352726-stranger-things.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -40%;
+}
+
+.form--login
+{
+  background-color: #F3F3F3;
+  padding: 1em;
+  color: #505050;
+  grid-column: form;
+  grid-row: form;
+}
+
+.form__error
+{
+  background-color: #999999;
+  color: white;
+  font-weight: lighter;
+  padding: 0.3em 1em;
+  margin-bottom: 1em;
+  font-size: 0.9em;
+}
+
+.form__field
+{
+  padding-bottom: 1em;
+}
+
+.form__field label
+{
+  display: block;
+  margin-bottom: 0.2em;
+}
+
+.form__field .label__inline
+{
+  display: inline-block;
+}
+
+.form__field input[type=text], 
+.form__field input[type=password] 
+{
+  width: 100%;
+  padding: 0.3em;
+  font-size: 1.4em;
+}
+
+.btn
+{
+  width: 100%;
+  margin: 0.5em auto;
+}
+
+.btn--primary
+{
+  background-color: red;
+  color: white;
+  text-align: center;
+  border: none;
+  padding: 0.3em 2em;
+  font-size: 1.4em;
+}
+
+.collectionDetails
+{
+  padding: 3em 1em;
+  margin-top: 1em;
+  background-size: cover;
+  padding-right: 40%;
+}
+
+.collectionDetails__title
+{
+  font-size: 3em;
+  font-weight: lighter;
+  
+  border-bottom: 3px solid red;
+}
+
+.collectionDetails__desc
+{
+  color: #999999;
+}
+
+.myList
+{
+  
+}
