@@ -145,3 +145,8 @@ a.loggedIn
 {
   display: none;
 }
+
+.welcome{
+  color: white;
+  text-align: center;
+}
