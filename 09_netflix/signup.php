@@ -18,7 +18,10 @@
         $passwordConfirmation = $_POST["password_confirmation"];
 
         if (canRegister($email, $password, $passwordConfirmation)){
-
+            echo "👹";
+            $sql = "insert into users (email, password) values ('test@test.com', 'test')";
+        } else {
+            echo "🔫";
         }
     }
 

@@ -1,7 +1,15 @@
 <?php 
 
     function canRegister($email, $password1, $password2){
+        if(!isPasswordSecureEnough($password1)){
+            return false;
+        }
 
+        if (!isEqual($password1, $password2)){
+            return false;
+        }
+        
+        return true;
     }
 
     function isPasswordSecureEnough($password){
