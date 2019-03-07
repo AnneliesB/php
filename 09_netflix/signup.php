@@ -3,26 +3,29 @@
     // mysql commando's zijn verouderd, dus blijf ervan weg! mysqli is wel goed
 
     if(!empty($_POST)){
-        $conn = @new mysqli("localhost", "root", "root", "netflix");
-        // @ symbool voor de functie zorgt ervoor dat errors onderdrukt worden
-        // zo kunnen hackermans niet aan uw errors en geef je geen info prijs ✌️
-
-        if(!$conn -> connect_errno == 0){
-            die ("ai kapot 😭");
-        }
-        //var_dump($conn);
-        // laat zien of connectie geslaagd is: ["connect_errno"]=> int(0) 
-
         $email = $_POST['email'];
         $password = $_POST['password'];
         $passwordConfirmation = $_POST["password_confirmation"];
 
         if (canRegister($email, $password, $passwordConfirmation)){
-            echo "👹";
-            $sql = "insert into users (email, password) values ('test@test.com', 'test')";
+            $conn = @new mysqli("localhost", "root", "root", "netflix");
+            // @ symbool voor de functie zorgt ervoor dat errors onderdrukt worden
+            // zo kunnen hackermans niet aan uw errors en geef je geen info prijs ✌️
+
+            if(!$conn -> connect_errno == 0){
+                die ("ai kapot 😭");
+            }
+            //var_dump($conn);
+            // laat zien of connectie geslaagd is: ["connect_errno"]=> int(0) 
+            $password = md5($password);
+            $sql = "insert into users (email, password) values ('$email', '$password')";
+            $result = $conn ->query($sql);
+            var_dump($result);
         } else {
             echo "🔫";
         }
+
+        
     }
 
 
