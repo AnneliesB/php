@@ -21,10 +21,10 @@
             $password = md5($password.$salt);
             $sql = "insert into users (email, password) values ('$email', '$password')";
             $result = $conn ->query($sql);
-            var_dump($result);
-
-
-            
+            session_start();
+			$_SESSION['user'] = true;
+			header("Location: index.php");
+    
         } else {
             echo "🔫";
         }
