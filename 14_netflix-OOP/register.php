@@ -1,5 +1,48 @@
 <?php
-	
+	if(!empty($_POST)){
+		$email = $_POST['email'];
+		$password = $_POST['password'];
+		$passwordConfirmation = $_POST['password_confirmation'];
+		
+		$conn = new PDO("mysql:host=localhost;dbname=netflix", "root", "root");
+		$statement = $conn -> prepare("insert into users (email, password) values(:email, :password)");
+		$statement->bindParam(":email" , $email);
+		$statement->bindParam(":password" , $password);
+		$result = $statement->execute();
+		var_dump($result);
+
+		/* 
+		prepare met query tussen
+		gewoon als values ('test', 'test') of ($email, 'test') gebruiken is nog steeds onveilig
+		(:email, :password) is veiliger, hier gebruiken we placeholders die we later kunnen invullen
+		de verantwoordelijkheid van de query is minder groot
+
+		$statement->bindParam(":email" , $email);
+		eerste plaats waar we iets willen binden :email en dan de variabele die we erin willen stoppen
+		dit doet nog niets tot we het statement uitvoeren, de waarde kan dus nog veranderen voor we de query uitvoeren
+
+		bindValue gaat meteen de waarde die we in $email steken in de :email steken
+
+		bindParam:
+		$statement = $conn -> prepare("insert into users (email, password) values(:email, :password)");
+		$statement->bindParam(":email" , $email);
+		$email = "test@test.com";
+		$statement->execute();
+
+		=> uitkomst is "test@test.com"
+
+		bindValue:
+		$statement = $conn -> prepare("insert into users (email, password) values(:email, :password)");
+		$email = "chareltje@hotmail.com"
+		$statement->bindParam(":email" , $email);
+		$email = "test@test.com";
+		$statement->execute();
+
+		=> uitkomst is "chareltje@hotmail.com"
+		*/
+	}
+
+
 
 ?><!DOCTYPE html>
 <html lang="en">
