@@ -9,14 +9,17 @@
 
         if (canRegister($email, $password, $passwordConfirmation)){
             $conn = @new mysqli("localhost", "root", "root", "netflix");
-            // @ symbool voor de functie zorgt ervoor dat errors onderdrukt worden
-            // zo kunnen hackermans niet aan uw errors en geef je geen info prijs ✌️
+            /* @ symbool voor de functie zorgt ervoor dat 
+            errors onderdrukt worden */
+            /* zo kunnen hackermans niet aan uw errors en geef 
+            je geen info prijs ✌️ */
 
             if(!$conn -> connect_errno == 0){
                 die ("ai kapot 😭");
             }
-            //var_dump($conn);
-            // laat zien of connectie geslaagd is: ["connect_errno"]=> int(0) 
+            /* var_dump($conn);
+            laat zien of connectie geslaagd is: 
+            ["connect_errno"]=> int(0)  */
             $salt = "koetjeszijnlief";
             $password = md5($password.$salt);
             $sql = "insert into users (email, password) values ('$email', '$password')";

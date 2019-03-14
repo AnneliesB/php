@@ -13,7 +13,8 @@
         $countEmails = count($arrEmails);
         $feedback = "We now have $countEmails subscribers!";
 
-        // in_array kan gebruikt worden om na te gaan of een waarde al bestaat in een array
+        /* in_array kan gebruikt worden om na te gaan 
+        of een waarde al bestaat in een array */
     }
 
 ?><!DOCTYPE html>
