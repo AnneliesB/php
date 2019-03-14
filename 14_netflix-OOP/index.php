@@ -1,5 +1,8 @@
 <?php 
-
+$conn = new PDO("mysql:host=localhost;dbname=netflix", "root", "root");
+$statement = $conn -> prepare("select * from collection");
+$statement-> execute();
+$collection = $statement->fetchAll();
 
 ?><!DOCTYPE html>
 <html lang="en">

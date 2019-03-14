@@ -3,6 +3,16 @@
 		$email = $_POST['email'];
 		$password = $_POST['password'];
 		$passwordConfirmation = $_POST['password_confirmation'];
+
+		$options = [
+			'cost' => 12
+		];
+
+		/* 
+		cost geeft aan tot hoeveel keer het wachtwoord wordt gehashed (12 = 4096)
+
+		*/
+		$password = password_hash($password, PASSWORD_DEFAULT, $options);
 		
 		try{
 			$conn = new PDO("mysql:host=localhost;dbname=netflix", "root", "root");

@@ -1,5 +1,22 @@
 <?php
-	
+	if(!empty($_POST)){
+		$conn = new PDO("mysql:host=localhost;dbname=netflix", "root", "root");
+		$email = $_POST['email'];
+		$password = $_POST['password'];
+		
+		$statement = $conn->prepare("select * from users where email = :email");
+		// geen '' rond :email
+		$statement->bindParam(":email", $email);
+		$statement->execute();
+		$user = $statement->fetch(PDO::FETCH_ASSOC);
+		//  fetchAll geeft array terug maar we verwachten maar 1 record terug te krijgen
+		
+		if(password_verify($password, $user['password'])){
+			echo "🍿";
+		} else {
+			echo "💩";
+		}
+	}
 
 ?><!DOCTYPE html>
 <html lang="en">
