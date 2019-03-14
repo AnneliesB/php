@@ -33,9 +33,16 @@
         */
     }
 
-    $student1 = new Student();
-    $student1->setFirstname("joske");
-    echo $student1->getFirstname();
+    try{
+        $student1 = new Student();
+        $student1->setFirstname("joske");
+        // hier spreekt deze de functie aan waar de exception is gedeclareerd
+        echo $student1->getFirstname();
+    }
+    catch(Throwable $t){
+        echo $t->getMessage();
+        // hier gaan we dan de link vinden naar de exception error message
+    }
 
 
    /*  $student1->firstname = "chareltje";
