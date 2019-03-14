@@ -4,12 +4,19 @@
 		$password = $_POST['password'];
 		$passwordConfirmation = $_POST['password_confirmation'];
 		
-		$conn = new PDO("mysql:host=localhost;dbname=netflix", "root", "root");
-		$statement = $conn -> prepare("insert into users (email, password) values(:email, :password)");
-		$statement->bindParam(":email" , $email);
-		$statement->bindParam(":password" , $password);
-		$result = $statement->execute();
-		var_dump($result);
+		try{
+			$conn = new PDO("mysql:host=localhost;dbname=netflix", "root", "root");
+			$statement = $conn -> prepare("insert into users (email, password) values(:email, :password)");
+			$statement->bindParam(":email" , $email);
+			$statement->bindParam(":password" , $password);
+			$result = $statement->execute();
+			var_dump($result);
+		} catch (Throwable $t) {
+			var_dump($t);
+		}
+
+	
+		
 
 		/* 
 		prepare met query tussen
