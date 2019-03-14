@@ -1,5 +1,6 @@
 <?php
 include_once("classes/User.class.php");
+include_once("Security.class.php");
 
 	if(!empty($_POST)){
 
@@ -8,6 +9,7 @@ include_once("classes/User.class.php");
 		$user->setPassword($_POST['password']);
 		$user->setPasswordConfirmation($_POST['password_confirmation']);
 		$user->register();
+		header("Location: index.php");
 		
 	}
 

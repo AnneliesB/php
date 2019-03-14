@@ -45,11 +45,9 @@ class User{
      * @return boolean - true if successful, false if unsuccessful
     */
     public function register(){
-        $options = [
-			'cost' => 12
-		];
-
-		$password = password_hash($this->password, PASSWORD_DEFAULT, $options);
+        $password = Security::hash($this->password);
+        
+        
 		
 		try{
 			$conn = new PDO("mysql:host=localhost;dbname=netflix", "root", "root");
