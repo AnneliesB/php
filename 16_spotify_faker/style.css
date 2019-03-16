@@ -37,6 +37,13 @@ body{
     justify-content: center;
 }
 
+.form__error{
+    text-align: center;
+    margin-top: 2em;
+    color: thistle;
+    margin-bottom: -2em;
+}
+
 form{
     padding-top: 2em;
     text-align: left;
