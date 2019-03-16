@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+<?php 
+include_once("classes/User.class.php");
+include_once("Security.class.php");
+if(!empty($_POST)){
+    $user = new User();
+    $user->setEmail($_POST['email']);
+    $user->setPassword($_POST['password']);
+    $user->setPasswordConfirmation($_POST['passwordConfirmation']);
+}
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
