@@ -70,7 +70,9 @@ a.navbar__logout
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   grid-gap: 1em;
+  
 }
+
 
 .collection__item
 {
@@ -78,6 +80,10 @@ a.navbar__logout
   height: 200px;
   background-position: center center;
   max-width: 300px;
+  text-decoration: none;
+  text-align: center;
+  color:royalblue;
+  font-weight: bold;
 }
 
 .netflixLogin
