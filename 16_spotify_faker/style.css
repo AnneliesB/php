@@ -1,0 +1,73 @@
+body{
+    background-image: url(background.jpeg);
+    background-repeat: none;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.top{
+    display: block;
+}
+
+.logo{
+    display: block;
+    margin-top: 4em;
+    margin-bottom: 5em;
+}
+
+.logo img{
+    width: 200px;
+}
+
+.btnFb{
+    background-color: #335496;
+    border-radius: 100px;
+    text-decoration: none;
+    color: white;
+    padding: 0.8em 5em;
+    font-size: 0.8em;
+    margin:1em 2em;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    padding-top: 2em;
+    text-align: left;
+}
+form label{
+    display: block;
+    text-align: left;
+    
+    margin-bottom: 0.5em;
+    margin-top: 2em;
+    color: white;
+    font-size: 0.8em;
+}
+
+input[type="text"]
+{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 300px;
+    height: 20px;
+}
+
+input[type="submit"]{
+    margin-top: 4em;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 100px;
+    padding: 0.5em 9.5em;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 1.5px;
+}
