@@ -18,7 +18,7 @@ $artists = $statement->fetchAll();
   
   <div class="collection">
     <?php foreach($artists as $a): ?>
-    <a href="details.php?id=<?php echo $a['id']; ?>" class="collection__item" style="background-image: url(https://fakeimg.pl/50x50/)">
+    <a href="artist.php?id=<?php echo $a['id']; ?>" class="collection__item" style="background-image: url(https://fakeimg.pl/50x50/)">
     <?php echo $a['name']; ?>
     </a>
     <?php endforeach; ?>
