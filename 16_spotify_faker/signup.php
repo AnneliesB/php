@@ -9,7 +9,6 @@ if(!empty($_POST)){
     $user->register();
     header("Location: index.php");
 }
-
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
