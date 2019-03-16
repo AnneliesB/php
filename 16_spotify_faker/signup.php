@@ -1,6 +1,6 @@
 <?php 
 include_once("classes/User.class.php");
-include_once("Security.class.php");
+include_once("classes/Security.class.php");
 if(!empty($_POST)){
     $user = new User();
     $user->setEmail($_POST['email']);
@@ -36,12 +36,12 @@ if(!empty($_POST)){
 
             <div class="form__field">
                 <label for="password">PASSWORD</label>
-                <input type="text" id="password" name="password">
+                <input type="password" id="password" name="password">
             </div>
 
             <div class="form__field">
                 <label for="passwordConfirmation">PASSWORD CONFIRMATION</label>
-                <input type="text" id="passwordConfirmation" name="passwordConfirmation">
+                <input type="password" id="passwordConfirmation" name="passwordConfirmation">
             </div>
 
             <div class="form__field">

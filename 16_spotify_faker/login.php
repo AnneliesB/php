@@ -13,7 +13,7 @@
     <div class="top">
         <a href="#" class="logo"><img src="logo.png" alt="#"></a>
 
-        <a href="#" class="btnFb">LOG IN WITH FACEBOOK</a>
+        <a href="#" class="btnFb">LOGIN WITH FACEBOOK</a>
     </div>
     <div class="container">
         <form action="" method="post">
@@ -29,7 +29,7 @@
             </div>
 
             <div class="form__field">
-                <input type="submit" value="Log in">
+                <input type="submit" value="Login">
             </div>
         
         </form>
