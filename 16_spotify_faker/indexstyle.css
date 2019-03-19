@@ -191,10 +191,15 @@ a.navbar__logout
   /* display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   text-align: center; */
-
+  
   margin-left: 3em;
 }
 
 .albums img{
   max-width: 190px;
+}
+
+.artistLink{
+  text-decoration: none;
+  color: white;
 }

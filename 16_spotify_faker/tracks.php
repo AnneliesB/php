@@ -1,9 +1,13 @@
 <?php 
 $conn = new PDO("mysql:host=localhost;dbname=spotify", "root", "root");
 $id = (int) $_GET['id'];
-$statement = $conn -> prepare("SELECT * from albums where artist_id='$id'");
+$statement = $conn -> prepare("SELECT * from tracks where album_id='$id'");
 $statement-> execute();
-$albums = $statement->fetchAll();
+$tracks = $statement->fetchAll();
+
+$statement2 = $conn->prepare("SELECT title from albums where id = '$id'");
+$statement2-> execute();
+$albumTitle = $statement2->fetch()['title'];
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -19,11 +23,11 @@ $albums = $statement->fetchAll();
 
     <div class="albumCollection">
       <div class="albums">
-        <?php foreach($albums as $a): ?>
-          <a href="tracks.php?id=<?php echo $a['id']; ?>" class="artistLink">
-            <h3> <?php echo $a['title']; ?></h3>
-            <img src="<?php echo $a['cover']; ?>" alt="#">  
-          </a>
+        <h3> <?php echo $albumTitle; ?></h3>
+        <?php foreach($tracks as $t): ?>
+            <ul>
+                <li> <?php echo $t['title']; ?></li>
+            </ul>
         <?php endforeach; ?>
       </div>
     </div>
