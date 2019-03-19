@@ -50,7 +50,7 @@
 
             <div class="form__field">
                 <label for="password">PASSWORD</label>
-                <input type="text" id="password" name="password">
+                <input type="password" id="password" name="password">
             </div>
 
             <div class="form__field">
