@@ -24,7 +24,7 @@ $albumTitle = $statement2->fetch()['title'];
   <div id="spotify">
 
     <div class="albumCollection">
-      <div class="albums">
+      <div class="tracks">
         <h3> <?php echo $albumTitle; ?></h3>
         <?php foreach($tracks as $t): ?>
             <ul>
