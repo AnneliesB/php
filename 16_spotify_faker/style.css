@@ -92,3 +92,8 @@ input[type="submit"]{
     font-size: 0.8em;
     letter-spacing: 1.5px;
 }
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}

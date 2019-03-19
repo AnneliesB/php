@@ -14,6 +14,8 @@ $artists = $statement->fetchAll();
     <title>Spotify Faker</title>
 </head>
 <body>
+
+<?php include_once("nav.inc.php"); ?>
   <div id="spotify">
   
   <div class="collection">

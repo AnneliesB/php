@@ -14,11 +14,13 @@ $albumTitle = $statement2->fetch()['title'];
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="indexstyle.css">
-  <title>IMDFlix</title>
+  <title>Spotify Faker</title>
 
 </head>
 <body>
   
+<?php include_once("nav.inc.php"); ?>
+
   <div id="spotify">
 
     <div class="albumCollection">
