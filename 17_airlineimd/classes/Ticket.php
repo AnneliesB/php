@@ -1,6 +1,6 @@
 <?php 
     class Ticket{
-        private $seat;
+        protected $seat;
         private $firstname;
 
         
@@ -31,8 +31,6 @@
         public function book(){
             
             $this->setSeat(rand(1, 60));
-
-
             // connectie + query
         }
 

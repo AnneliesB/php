@@ -8,6 +8,10 @@
 
     $ticketVip = new TicketVip();
     $ticketVip ->setFirstname("David");
+    $ticketVip->setMeal("vegetarian");
+    $ticketVip->setSeat("80");
+    $ticketVip->book();
+    echo $ticketVip->getTicket();
     // ... SEAT?
 
 ?>
