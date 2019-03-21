@@ -19,6 +19,7 @@
 
         public function book(){
             // connectie + query
+            $conn = Db::getInstance();
         }
 
         public function getTicket(){

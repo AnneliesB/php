@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5599c230-a2ae-4fdd-8a91-3873741326cc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/17_airlineimd/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/17_airlineimd/bootstrap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/17_airlineimd/classes/Ticket.php" beforeDir="false" afterPath="$PROJECT_DIR$/17_airlineimd/classes/Ticket.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/17_airlineimd/interfaces/iTicket.php" beforeDir="false" afterPath="$PROJECT_DIR$/17_airlineimd/interfaces/iTicket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/17_airlineimd/classes/TicketVip.php" beforeDir="false" afterPath="$PROJECT_DIR$/17_airlineimd/classes/TicketVip.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,28 +32,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/17_airlineimd/bootstrap.php">
+        <entry file="file://$PROJECT_DIR$/17_airlineimd/classes/TicketVip.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+            <state relative-caret-position="343">
+              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/17_airlineimd/classes/TicketVip.php">
+        <entry file="file://$PROJECT_DIR$/17_airlineimd/classes/Ticket.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+            <state relative-caret-position="304">
+              <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/17_airlineimd/classes/Ticket.php">
+        <entry file="file://$PROJECT_DIR$/17_airlineimd/classes/Db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            <state relative-caret-position="286">
+              <caret line="13" column="72" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -67,11 +66,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/17_airlineimd/classes/TicketVip.php" />
         <option value="$PROJECT_DIR$/17_airlineimd/bootstrap.php" />
         <option value="$PROJECT_DIR$/17_airlineimd/index.php" />
         <option value="$PROJECT_DIR$/17_airlineimd/interfaces/iTicket.php" />
         <option value="$PROJECT_DIR$/17_airlineimd/classes/Ticket.php" />
+        <option value="$PROJECT_DIR$/17_airlineimd/classes/TicketVip.php" />
+        <option value="$PROJECT_DIR$/17_airlineimd/classes/Db.php" />
       </list>
     </option>
   </component>
@@ -98,6 +98,11 @@
             <path>
               <item name="php" type="b2602c69:ProjectViewProjectNode" />
               <item name="php" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="16_spotify_faker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="php" type="b2602c69:ProjectViewProjectNode" />
@@ -142,24 +147,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553176704893</updated>
-      <workItem from="1553176707409" duration="2216000" />
+      <workItem from="1553176707409" duration="3446000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2216000" />
+    <option name="totallyTimeSpent" value="3446000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="946" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13247864" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13247864" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.24473068" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.24473068" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -178,10 +183,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/17_airlineimd/classes/TicketVip.php">
+    <entry file="file://$PROJECT_DIR$/17_airlineimd/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        <state relative-caret-position="176">
+          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -189,13 +194,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/17_airlineimd/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -208,8 +206,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/17_airlineimd/classes/Ticket.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        <state relative-caret-position="304">
+          <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/16_spotify_faker/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/17_airlineimd/classes/TicketVip.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/17_airlineimd/classes/Db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="72" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
         </state>
       </provider>
     </entry>

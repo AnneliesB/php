@@ -29,9 +29,9 @@
         }
 
         public function book(){
-
             $this->setSeat(rand(1, 60));
             // connectie + query
+            $conn = Db::getInstance();
         }
 
         public function getTicket(){
