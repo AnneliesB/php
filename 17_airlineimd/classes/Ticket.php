@@ -23,7 +23,7 @@
         }
 
         public function getTicket(){
-            $ticket = "<h3>Firstname: " . $this->getFirstname() . "</h3>";
+            $ticket = "<h3>Firstname: " . $this->getPassenger()->getFirstname() . "</h3>";
             $ticket .= "<p>Seat: " . $this->getSeat() . "</p>";
             return $ticket;
         }
