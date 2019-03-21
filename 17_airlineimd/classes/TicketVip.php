@@ -19,7 +19,12 @@
 
         public function book(){
             // connectie + query
+        }
 
+        public function getTicket(){
+            $ticket = parent::getTicket();
+            $ticket .= "<p>Meal: " . $this->getMeal() . "</p>";
+            return $ticket;
         }
 
 
