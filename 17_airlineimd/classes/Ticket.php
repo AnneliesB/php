@@ -1,7 +1,7 @@
 <?php
     class Ticket implements iTicket {
         protected $seat;
-        private $firstname;
+        private $passenger;
 
 
         public function getSeat()
@@ -16,18 +16,6 @@
                 return $this;
         }
 
-        public function getFirstname()
-        {
-                return $this->firstname;
-        }
-
-        public function setFirstname($firstname)
-        {
-                $this->firstname = $firstname;
-
-                return $this;
-        }
-
         public function book(){
             $this->setSeat(rand(1, 60));
             // connectie + query
@@ -38,6 +26,15 @@
             $ticket = "<h3>Firstname: " . $this->getFirstname() . "</h3>";
             $ticket .= "<p>Seat: " . $this->getSeat() . "</p>";
             return $ticket;
+        }
+
+        public function setPassenger($passenger){
+            $this->passenger = $passenger;
+            return $this;
+        }
+
+        public function getPassenger(){
+            return $this->passenger;
         }
     }
 
