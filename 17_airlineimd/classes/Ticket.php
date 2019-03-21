@@ -1,9 +1,9 @@
-<?php 
-    class Ticket{
+<?php
+    class Ticket implements iTicket {
         protected $seat;
         private $firstname;
 
-        
+
         public function getSeat()
         {
                 return $this->seat;
@@ -29,7 +29,7 @@
         }
 
         public function book(){
-            
+
             $this->setSeat(rand(1, 60));
             // connectie + query
         }

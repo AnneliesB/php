@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5599c230-a2ae-4fdd-8a91-3873741326cc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/17_airlineimd/classes/TicketVip.php" beforeDir="false" afterPath="$PROJECT_DIR$/17_airlineimd/classes/TicketVip.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/17_airlineimd/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/17_airlineimd/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/17_airlineimd/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/17_airlineimd/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/17_airlineimd/classes/Ticket.php" beforeDir="false" afterPath="$PROJECT_DIR$/17_airlineimd/classes/Ticket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/17_airlineimd/interfaces/iTicket.php" beforeDir="false" afterPath="$PROJECT_DIR$/17_airlineimd/interfaces/iTicket.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,15 +17,28 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/17_airlineimd/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="176">
+              <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/17_airlineimd/interfaces/iTicket.php">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/17_airlineimd/bootstrap.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -36,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/17_airlineimd/classes/Ticket.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="63" />
+            <state relative-caret-position="176">
+              <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -53,9 +67,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/17_airlineimd/classes/Ticket.php" />
         <option value="$PROJECT_DIR$/17_airlineimd/classes/TicketVip.php" />
+        <option value="$PROJECT_DIR$/17_airlineimd/bootstrap.php" />
         <option value="$PROJECT_DIR$/17_airlineimd/index.php" />
+        <option value="$PROJECT_DIR$/17_airlineimd/interfaces/iTicket.php" />
+        <option value="$PROJECT_DIR$/17_airlineimd/classes/Ticket.php" />
       </list>
     </option>
   </component>
@@ -126,12 +142,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553176704893</updated>
-      <workItem from="1553176707409" duration="1921000" />
+      <workItem from="1553176707409" duration="2216000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1921000" />
+    <option name="totallyTimeSpent" value="2216000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="946" extended-state="6" />
@@ -162,13 +178,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/17_airlineimd/classes/Ticket.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/17_airlineimd/classes/TicketVip.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
@@ -176,15 +185,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/17_airlineimd/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/17_airlineimd/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="176">
+          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/17_airlineimd/interfaces/iTicket.php">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/17_airlineimd/classes/Ticket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
