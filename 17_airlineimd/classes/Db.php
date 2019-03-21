@@ -10,8 +10,9 @@
                 return self::$conn;
 
             } else {
+                $config = parse_ini_file("config/config.ini");
                 // no connection yet
-                self::$conn = new PDO("mysql:host=localhost;dbname=airline", "root", "root");
+                self::$conn = new PDO("mysql:host=localhost;dbname=".$config['db_name'], $config['db_user'], $config['db_password']);
                 echo "🐡";
             }
 
