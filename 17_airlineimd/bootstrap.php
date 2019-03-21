@@ -8,3 +8,6 @@
 
     // load interfaces
     require_once ("interfaces/iTicket.php");
+
+    // load traits
+    require_once ("traits/Json.php");
