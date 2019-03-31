@@ -1,6 +1,7 @@
 <?php
 
     class Passenger{
+        use Json;
         private $firstname;
 
 

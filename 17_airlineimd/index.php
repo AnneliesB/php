@@ -3,6 +3,7 @@
 
     $passenger1 = new Passenger();
     $passenger1->setFirstname("Chareltje");
+    //echo $passenger1->toJson();
 
     $passenger2 = new Passenger();
     $passenger2->setFirstname("David");
